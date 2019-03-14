@@ -85,7 +85,15 @@ ___~~删除加粗斜体~~___
             + 二级目录
                 + 三级目录
 
-* 插入超链接
+* 插入超链接（三种方式）
+
+http://jianshu.com
+
+[简书](http://jianshu.com)
 
 [简书](http://jianshu.com "http://jianshu.com")
+
+* 插入公式
+
+$1+1=2$
  

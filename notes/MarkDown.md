@@ -67,7 +67,7 @@ ___~~删除加粗斜体~~___
 ```
 *插入图片
 
-!插入图片(https://b-ssl.duitang.com/uploads/blog/201407/13/20140713112142_HkPyR.thumb.700_0.jpeg)  
+![插入图片](https://b-ssl.duitang.com/uploads/blog/201407/13/20140713112142_HkPyR.thumb.700_0.jpeg "小黄人")  
 
 
  

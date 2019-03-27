@@ -24,9 +24,11 @@
 二、配置SpringSession和Redis
 
 1、创建配置类（类名随意）
+
 关键是两个注解
 * @Configuration    用于定义配置类
 * @EnableRedisHttpSession   开启缓存HttpSession（默认有效时间为1800s）
+
 
 
     @Configuration
@@ -82,6 +84,6 @@
    
 四、测试
 
-调用服务时，会往Redis中存入session信息。
+调用服务时，会往Redis中存入session信息；节点不同也是同一个session。
 
 ![spring-session](img/spring-session.jpg)

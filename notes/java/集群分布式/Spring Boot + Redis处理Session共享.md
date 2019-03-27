@@ -29,13 +29,13 @@
 * @Configuration    用于定义配置类
 * @EnableRedisHttpSession   开启缓存HttpSession（默认有效时间为1800s）
 
-
+***
 
     @Configuration
     @EnableRedisHttpSession
     public class SessionConfig {
     }
-
+***
 
 2、在yml中配置redis
 

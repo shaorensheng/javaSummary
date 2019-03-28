@@ -1,4 +1,4 @@
-package staticFactoryMethod;
+package designPattern.staticFactoryMethod;
 
 /**
  * Copyright (C) 2017/6/20 北京学信科技有限公司

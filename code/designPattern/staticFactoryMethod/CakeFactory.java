@@ -1,4 +1,4 @@
-package staticFactoryMethod;
+package designPattern.staticFactoryMethod;
 
 /**
  * 蛋糕店

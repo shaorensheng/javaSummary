@@ -1,25 +1,25 @@
-package staticFactoryMethod;
+package designPattern.staticFactoryMethod;
 
 /**
- * 巧克力蛋糕
+ * 咩咩羊蛋糕
  *
  * @author shaorensheng
  * @date 2019/3/18 13:53
  */
-public class FruitsCake implements Cake {
+public class SheepCake implements Cake {
     @Override
     public void getMaterial() {
-        System.out.println("水果");
+        System.out.println("巧克力");
     }
 
     @Override
     public void getShape() {
-        System.out.println("方形");
+        System.out.println("圆形");
     }
 
     @Override
     public void getStyle() {
-        System.out.println("九宫格");
+        System.out.println("羊");
     }
 
     @Override
@@ -27,6 +27,6 @@ public class FruitsCake implements Cake {
         getMaterial();
         getShape();
         getStyle();
-        return "水果蛋糕";
+        return "咩咩羊蛋糕";
     }
 }

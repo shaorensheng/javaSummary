@@ -1,9 +1,6 @@
-package staticFactoryMethod;
+package designPattern.staticFactoryMethod;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 
 /**
  * 顾客

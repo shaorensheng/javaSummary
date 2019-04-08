@@ -1,7 +1,7 @@
 package designPattern.factoryMethod;
 
 /**
- * @author shaorensheng
+ * @author srs
  * @date 2019/3/28 17:09
  */
 public class JeepFactory implements CarFactory {

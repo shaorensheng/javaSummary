@@ -5,7 +5,7 @@ import java.text.ParseException;
 /**
  * 顾客
  *
- * @author shaorensheng
+ * @author srs
  * @date 2019/3/18 14:17
  */
 public class Customer {

@@ -3,7 +3,7 @@ package designPattern.staticFactoryMethod;
 /**
  * 咩咩羊蛋糕
  *
- * @author shaorensheng
+ * @author srs
  * @date 2019/3/18 13:53
  */
 public class SheepCake implements Cake {

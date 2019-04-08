@@ -12,7 +12,7 @@ package designPattern.AbstractFactory;
 public abstract class Factory {
 
     /**
-     * 获取电视机产品
+     * 电视机工厂
      * @param tvName
      * @return
      */
@@ -20,7 +20,7 @@ public abstract class Factory {
 
 
     /**
-     * 获取冰箱产品
+     * 冰箱工厂
      * @param refrigeratorName
      * @return
      */

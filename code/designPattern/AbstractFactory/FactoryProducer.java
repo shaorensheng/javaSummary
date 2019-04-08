@@ -3,7 +3,7 @@ package designPattern.AbstractFactory;
 /**
  * 工厂注册类
  *
- * @author shaorensheng
+ * @author srs
  * @date 2019/4/8 11:17
  */
 public class FactoryProducer {

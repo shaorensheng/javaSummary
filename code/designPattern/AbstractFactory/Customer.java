@@ -3,7 +3,7 @@ package designPattern.AbstractFactory;
 /**
  * 顾客类
  *
- * @author shaorensheng
+ * @author srs
  * @date 2019/4/8 11:16
  */
 public class Customer {

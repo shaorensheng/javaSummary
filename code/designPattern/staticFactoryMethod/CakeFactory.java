@@ -3,7 +3,7 @@ package designPattern.staticFactoryMethod;
 /**
  * 蛋糕店
  *
- * @author shaorensheng
+ * @author srs
  * @date 2019/3/18 13:59
  */
 public class CakeFactory {

@@ -30,7 +30,7 @@ AtomicLong中的value被声明为volatile。AtomicLong通过CAS原理（也可�
 volatile和synchronized修饰变量、方法、代码段
 
 特性|volatile|synchronized
----|:--:|---
+:--:|:--:|:--:
 可见性|✔|✔
 有序性|✔|✔
 原子性|✖|✔

@@ -50,6 +50,17 @@ Integer a = 128;
 Integer b = 128;
 System.out.println(a == b); //  false
 ```
-包装类对应的缓冲池如下：
-* Boolean true/false
-* Byte  
+# 二、String
+## 概览
+String被声明为final，因为它不能被继承。  
+在Java8中，String内部使用**char数组**存储数据。  
+在Java9之后，String类的实现改用**byte数组**存储字符串，同时使用coder来标识使用了哪种编码。  
+
+## String Pool
+```java
+String a = "123sdfsddfgd";
+String b = "123sdfsddfgd";
+System.out.println(a == b);
+System.out.println(a.equals(b));
+```
+## 不可变的好处

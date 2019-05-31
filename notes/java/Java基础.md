@@ -57,7 +57,7 @@ String被声明为final，因为它不能被继承。
 在Java9之后，String类的实现改用**byte数组**存储字符串，同时使用coder来标识使用了哪种编码。  
 
 ## String Pool
-```java
+```
 String a = "123sdfsddfgd";
 String b = "123sdfsddfgd";
 System.out.println(a == b);

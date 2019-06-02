@@ -85,15 +85,36 @@ System.out.println(m == n);     //true
 ```
 
 ## new String("abc)
+
 使用这种方式一共会创建两个字符串对象（前提是String Pool中没有abc字符串对象）。
 * "abc"属于字符串字面量，因此编译时期会在String Pool中创建一个字符串对象，
 指向这个"abc"字符串字面量。
 * 而使用new的方式会在堆中创建一个字符串对象。
 
 ## 不可变的好处
+
 **1、可以缓存hash值**  
 因为String的hash值经常被使用，例如：String用作HashMap的key，
 不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。
+**2、String Pool的需要**  
+如果一个String对象已经被创建过了，那么就会从String Pool中取得引用，
+只有String是不可变的，才可能使用String Pool。  
+**3、安全性**  
+String经常作为参数，String不可变性可以保证参数不可变。
+例如在作为网络连接参数的情况下，如果String是可变的，那么在网络连接的过程中，
+String被改变，改变String对象的那一方以为现在连接的是其它主机，而实际情况却不一定是。  
+**4、线程安全**  
+String不可变性，天生具备线程安全，可以在多个线程中安全地使用。
+
+## String、StringBuffer and StringBuilder
+
+**1、可变性**  
+* String不可变
+* StingBuffer和StringBuilder可变
+**2、线程安全**  
+* String线程安全
+* StringBuffer线程安全，内部使用synchronized进行同步
+* StringBuilder线程不安全
 
 # <a name="6">六、关键字</a>
 

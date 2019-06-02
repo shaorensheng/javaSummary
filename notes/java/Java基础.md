@@ -1,8 +1,8 @@
-*<a href="#1">一、数据类型</a>
+* <a href="#1">一、数据类型</a>
     * <a href="#1.1">基本类型</a>
     * <a href="#1.2">包装类型</a>
     * <a href="#1.3">缓存池</a>
-*<a href="#2">二、String</a>
+* <a href="#2">二、String</a>
     * <a href="#2.1">概览</a>
     * <a href="#2.2">String Pool</a>
     * <a href="#2.3">new String("abc)</a>

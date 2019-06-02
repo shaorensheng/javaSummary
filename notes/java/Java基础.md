@@ -1,15 +1,21 @@
-* 一、数据类型
-    * 基本类型
-    * 包装类型
-    * 缓存池
+*<a href="#1">一、数据类型</a>
+    * <a href="#1.1">基本类型</a>
+    * <a href="#1.2">包装类型</a>
+    * <a href="#1.3">缓存池</a>
+*<a href="#2">二、String</a>
+    * <a href="#2.1">概览</a>
+    * <a href="#2.2">String Pool</a>
+    * <a href="#2.3">new String("abc)</a>
+    * <a href="#2.4">不可变的好处</a>
+    * <a href="#2.5">String、StringBuffer and StringBuilder)</a>
 * <a href="#6">六、关键字</a>
     * <a href="#6.1">final</a>
     * <a href="#6.2">static</a>
     
     
     
-# 一、数据类型
-## 基本类型
+# <a name="1">一、数据类型</a>
+## <a name="1.1">基本类型</a>
 * byte  8位
 * char  16位
 * short 16位
@@ -22,7 +28,7 @@
     JVM会在编译时期将boolean类型的数据转换为int，使用1表示true，0表示false。
     JVEM支持boolean数组，但是通过读写byte数组来实现。
    
-## 包装类型
+## <a name="1.2">包装类型</a>
 * Byte
 * Character
 * Short
@@ -34,7 +40,7 @@
 
 基本类型和包装类型之间的赋值使用自动装箱和拆箱完成。
 
-## 缓存池
+## <a name="1.3">缓存池</a>
 new Integer(123)与Integer.valueOf(123)的区别在于：
 * new Integer(123)每次都会新建一个对象；
 * Integer.valueOf(123)会使用缓存池中的对象，多次调用会取得同一个对象的引用。
@@ -52,13 +58,13 @@ Integer a = 128;
 Integer b = 128;
 System.out.println(a == b); //  false
 ```
-# 二、String
-## 概览
+# <a name="2">二、String</a>
+## <a name="2.1">概览</a>
 String被声明为final，因为它不能被继承。  
 在Java8中，String内部使用**char数组**存储数据。  
 在Java9之后，String类的实现改用**byte数组**存储字符串，同时使用coder来标识使用了哪种编码。  
 
-## String Pool
+## <a name="2.2">String Pool</a>
 字符串常量池（String Pool）保存着所有字符串字面量，这些字面量在编译时期就确定。
 不仅如此，还可以使用String的intern()方法在运行过程中将字符串添加到String Pool中。  
 
@@ -84,14 +90,14 @@ String n = "asd";
 System.out.println(m == n);     //true
 ```
 
-## new String("abc)
+## <a name="2.3">new String("abc)</a>
 
 使用这种方式一共会创建两个字符串对象（前提是String Pool中没有abc字符串对象）。
 * "abc"属于字符串字面量，因此编译时期会在String Pool中创建一个字符串对象，
 指向这个"abc"字符串字面量。
 * 而使用new的方式会在堆中创建一个字符串对象。
 
-## 不可变的好处
+## <a name="2.4">不可变的好处</a>
 
 **1、可以缓存hash值**  
 因为String的hash值经常被使用，例如：String用作HashMap的key，
@@ -106,7 +112,7 @@ String被改变，改变String对象的那一方以为现在连接的是其它�
 **4、线程安全**  
 String不可变性，天生具备线程安全，可以在多个线程中安全地使用。
 
-## String、StringBuffer and StringBuilder
+## <a name="2.5">String、StringBuffer and StringBuilder</a>
 
 **1、可变性**  
 * String不可变

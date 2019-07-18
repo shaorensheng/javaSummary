@@ -116,7 +116,7 @@ String不可变性，天生具备线程安全，可以在多个线程中安全�
 
 **1、可变性**  
 * String不可变
-* StingBuffer和StringBuilder可变
+* StingBuffer和StringBuilder可变   
 **2、线程安全**  
 * String线程安全
 * StringBuffer线程安全，内部使用synchronized进行同步

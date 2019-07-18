@@ -101,7 +101,7 @@ System.out.println(m == n);     //true
 
 **1、可以缓存hash值**  
 因为String的hash值经常被使用，例如：String用作HashMap的key，
-不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。
+不可变的特性可以使得hash值也不可变，因此只需要进行一次计算。    
 **2、String Pool的需要**  
 如果一个String对象已经被创建过了，那么就会从String Pool中取得引用，
 只有String是不可变的，才可能使用String Pool。  
@@ -117,6 +117,7 @@ String不可变性，天生具备线程安全，可以在多个线程中安全�
 **1、可变性**  
 * String不可变
 * StingBuffer和StringBuilder可变   
+
 **2、线程安全**  
 * String线程安全
 * StringBuffer线程安全，内部使用synchronized进行同步
